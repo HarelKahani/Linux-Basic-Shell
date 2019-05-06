@@ -1,0 +1,35 @@
+
+==========================================================
+CREATED BY : Harel Kahani
+
+Program description:
+The following program is building a basic shell.
+the program will get a command from the user by using getLine and insert the command into buffer. 
+By using get command function the program split the command that came from the user
+and insert the command to the first place, after arguments and finally null.
+The program would create a process by using fork, and in the process send the array of the command to execvp.
+I did main function, that all the rest of the function happens in it - commandLoop.
+in commandLoop all the logic of the program is happening, calling to the different functions.
+the program would end by typing 'done'.
+after 'done' is typed, the program would show:
+1. how many commands typed (include 'done')
+2. total size of the all commands which typed
+3. the average size of the commands
+
+methods :
+
+ex1 :
+void commandLoop();
+void getPath();
+char* commandLine();
+char** splitCommand(char* command);
+void exec_launch(char** args);
+void printSummary(double aver);
+void free_memory(char** args,char* command, char* temp_cmd);
+int main()
+
+Compile and running: 
+In Visual code
+To compile: Ctrl + shift + b 
+To run: Ctrl + f5 
+
